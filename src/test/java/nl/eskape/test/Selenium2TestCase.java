@@ -6,24 +6,21 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class Selenium2TestCase {
-    
-    /** The driver. */
-    public static WebDriver driver;
 
-    
+    /** The driver. */
+    protected WebDriver driver;
+
     @BeforeClass
     public void setUpSelenium() {
         driver = new FirefoxDriver();
     }
 
-    
     /**
      * Tear down selenium.
      */
     @AfterClass
-    public static void tearDownSelenium() {
+    public void tearDownSelenium() {
         driver.close();
     }
-
 
 }

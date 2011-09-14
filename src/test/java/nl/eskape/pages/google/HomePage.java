@@ -35,7 +35,7 @@ public class HomePage extends Page {
     }
 
     public void waitForSearchResult(final int index, final SearchResult expectedSearchResult) {
-        new Wait("Couldn't find search button!") {
+        new Wait(String.format("Couldn't find search result [%d]", index)) {
             public boolean until() {
                 return getSearchResult(index).equals(expectedSearchResult);
             }
@@ -43,6 +43,11 @@ public class HomePage extends Page {
     }
 
     private List<WebElement> getSearchResults() {
+        new Wait("Couldn't find search result!") {
+            public boolean until() {
+                return driver.findElement(By.id("rso")).isDisplayed();
+            }
+        };
         return driver.findElement(By.id("rso")).findElements(By.tagName("li"));
     }
 

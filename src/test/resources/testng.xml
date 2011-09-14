@@ -1,7 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Selenium2Suite" verbose="1" >
   <test name="Google">
     <packages>
         <package name="nl.eskape.test.google" />
-    </packages>
+    </packages>   
   </test>
 </suite>
