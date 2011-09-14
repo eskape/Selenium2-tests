@@ -1,14 +1,15 @@
-package com.xebia.test.pages.google;
+package nl.eskape.pages.google;
 
 import java.util.List;
+
+import nl.eskape.pages.Page;
+import nl.eskape.pages.google.models.SearchResult;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.thoughtworks.selenium.Wait;
-import com.xebia.test.pages.Page;
-import com.xebia.test.pages.google.models.SearchResult;
 
 public class HomePage extends Page {
 

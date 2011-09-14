@@ -1,10 +1,12 @@
-package com.xebia.tests;
+package nl.eskape.test.google;
+
+import nl.eskape.pages.google.HomePage;
+import nl.eskape.pages.google.models.SearchResult;
+import nl.eskape.test.Selenium2TestCase;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.xebia.test.pages.google.HomePage;
-import com.xebia.test.pages.google.models.SearchResult;
 
 public class GoogleTest extends Selenium2TestCase {
 
@@ -31,8 +33,8 @@ public class GoogleTest extends Selenium2TestCase {
         homePage.getSearchBox().clear();
         homePage.getSearchBox().sendKeys("Xebia");
         homePage.clickSearchButton();
-        SearchResult expectedSearchResult = new SearchResult("Educator - Onderwijslogistiek - en informatiesysteem", "www.educator.eu/",
-                "Educator is een softwarebedrijf die een onderwijslogistiek- en informatiesysteem levert aan onderwijs en bedrijfsleven.");
+        SearchResult expectedSearchResult = new SearchResult("Xebia", "www.xebia.com/",
+                "\"Xebia is helping us build customized systems and all links between the software packages. But even more important, they have changed the culture in our ...");
         homePage.waitForSearchResult(0, expectedSearchResult);
     }
 

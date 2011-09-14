@@ -1,4 +1,4 @@
-package com.xebia.tests;
+package nl.eskape.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

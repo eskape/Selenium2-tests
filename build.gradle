@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
-group = 'com.xebia'
+group = 'nl.eskape'
 artifactId = 'selenium2quickstart'
 version = 1.0
 

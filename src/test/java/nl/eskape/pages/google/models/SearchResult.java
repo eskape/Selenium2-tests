@@ -1,4 +1,4 @@
-package com.xebia.test.pages.google.models;
+package nl.eskape.pages.google.models;
 
 public class SearchResult {
 
