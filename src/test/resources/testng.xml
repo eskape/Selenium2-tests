@@ -1,0 +1,7 @@
+<suite name="Selenium2Suite" verbose="1" >
+  <test name="Regression1">
+    <packages>
+        <package name="com.xebia.test" />
+    </packages>
+  </test>
+</suite>

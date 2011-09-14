@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+group = 'com.xebia'
+artifactId = 'selenium2quickstart'
+version = 1.0
+
+seleniumVersion = '2.6.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: '6.2'
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: seleniumVersion
+}
+
+test {
+    useTestNG() {
+        suites 'src/test/resources/testng.xml' 
+    }
+}
