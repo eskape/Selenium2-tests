@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeClass;
 
 public class Selenium2TestCase {
 
-    /** The driver. */
     protected WebDriver driver;
 
     @BeforeClass
@@ -15,9 +14,6 @@ public class Selenium2TestCase {
         driver = new FirefoxDriver();
     }
 
-    /**
-     * Tear down selenium.
-     */
     @AfterClass
     public void tearDownSelenium() {
         driver.close();
