@@ -32,8 +32,9 @@ public class GoogleTest extends Selenium2TestCase {
         homePage.getSearchBox().clear();
         homePage.getSearchBox().sendKeys(searchQuery);
         homePage.getSearchBox().submit();
+        
         // somehow we need to sleep a bit using google's submit
-        Thread.sleep(200);
+        Thread.sleep(500);
         homePage.waitForSearchResult(0, expectedSearchResult);
     }
 
